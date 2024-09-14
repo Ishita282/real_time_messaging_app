@@ -19,7 +19,7 @@ const ConversationSchema = new Schema ({
 
 });
 
-ConversationSchema.index({ conversationId: 1 });
+ConversationSchema.index({ conversation_id: 1 });
 
 
 module.exports = mongodb.model('Conversations', ConversationSchema);

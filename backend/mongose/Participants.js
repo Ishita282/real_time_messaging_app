@@ -24,7 +24,7 @@ const participantSchema = new Schema ({
 
 });
 
-participantSchema.index({ participantSchema: 1, user_id: 1, ConversationSchema: 1, joined_at: -1 });
+participantSchema.index({ participant_id: 1, user_id: 1, conversation_id: 1, joined_at: -1 });
 
 
 module.exports = mongodb.model('Participants', participantSchema);
