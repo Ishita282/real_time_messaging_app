@@ -58,5 +58,5 @@ userSchema.index({
     last_login: -1,
 });
 
-module.exports = mongodb.model('User', userSchema);
+module.exports = mongodb.model('Users', userSchema);
 
