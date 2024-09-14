@@ -35,5 +35,4 @@ const messageSchema = new Schema({
 //Indexing
 messageSchema.index({message_id: 1, sent_at: -1});
 
-module.exports = mongodb.Schema('Message', messageSchema)
-
+module.exports = mongodb.Schema('Messages', messageSchema);
