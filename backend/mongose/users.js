@@ -42,7 +42,8 @@ const userSchema = new Schema({
         default: Date.now
     },
     last_login: {
-        type: Date
+        type: Date,
+        default: Date.now
     },
     status: {
         type: String,
@@ -53,9 +54,12 @@ const userSchema = new Schema({
 
 //Indexing
 userSchema.index({
+    user_id: 1,
     email: 1,
     username: 1,
-    last_login: -1,
+    created_at: -1,
+    updated_at:-1,
+    last_login: -1
 });
 
 module.exports = mongodb.model('Users', userSchema);

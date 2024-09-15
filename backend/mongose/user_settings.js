@@ -19,7 +19,7 @@ const userSettingSchema = new Schema({
 });
 
 //Indexing
-userSchema.index({
+userSettingSchema.index({
     user_id: 1
 });
 
